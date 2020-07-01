@@ -1,3 +1,9 @@
 div {
   border: 3px black solid;
+  margin-left: 0%;
+  transition: all ease-out 0.25s;
+}
+.moveR {
+  margin-left: 100%;
+  transition: all ease-out 0.5s;
 }
