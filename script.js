@@ -1,5 +1,6 @@
-var btn=document.getElementById("btn");
+let button=document.querySelector("button");
+let count=document.querySelector("span");
 // console.log(btn);
-btn.addEventListener("click",function() {
-    btn.innerHTML=(btn.innerHTML*1)+1;
+button.addEventListener("click",function() {
+    count.textContent=+count.textContent+1;
 });
