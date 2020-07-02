@@ -24,6 +24,18 @@ function increasefn() {
   divedit.style.height = size + 10 + "px";
 }
 
+document.addEventListener("keydown", function (event) {
+  if (event.keyCode == 39) {
+    rightfn();
+  } else if (event.keyCode == 37) {
+    leftfn();
+  } else if (event.keyCode == 38) {
+    upfn();
+  } else if (event.keyCode == 40) {
+    downfn();
+  }
+});
+
 downbtn.addEventListener("click", downfn);
 
 function downfn() {
