@@ -8,7 +8,7 @@ let divedit = document.querySelector("#subject");
 let container = document.querySelector("#container");
 let keyspressed = {};
 
-console.log(container.style.width);
+// console.log(container.style.width);
 // function logger() {
 //   console.log(divedit.style.marginLeft);
 //   console.log(divedit.style.marginTop);
@@ -29,7 +29,7 @@ function increasefn() {
 
 document.addEventListener("keydown", function (event) {
   keyspressed[event.keyCode] = true;
-  console.log(keyspressed);
+  // console.log(keyspressed);
   if (
     (keyspressed[87] && event.keyCode == 65) ||
     (keyspressed[38] && event.keyCode == 37) ||
@@ -64,16 +64,12 @@ document.addEventListener("keydown", function (event) {
     rightfn();
   } else if (event.keyCode == 39 || event.keyCode == 68) {
     rightfn();
-    rightbtn.classList.add("highlight");
   } else if (event.keyCode == 37 || event.keyCode == 65) {
     leftfn();
-    leftbtn.classList.add("highlight");
   } else if (event.keyCode == 38 || event.keyCode == 87) {
     upfn();
-    upbtn.classList.add("highlight");
   } else if (event.keyCode == 40 || event.keyCode == 83) {
     downfn();
-    downbtn.classList.add("highlight");
   }
 });
 
@@ -93,6 +89,7 @@ document.addEventListener("keyup", function (event) {
 downbtn.addEventListener("click", downfn);
 
 function downfn() {
+  downbtn.classList.add("highlight");
   counter();
   // logger();
   let size = parseInt(divedit.style.marginTop) + 10;
@@ -107,6 +104,7 @@ function downfn() {
 rightbtn.addEventListener("click", rightfn);
 
 function rightfn() {
+  rightbtn.classList.add("highlight");
   counter();
   // logger();
   let size = parseInt(divedit.style.marginLeft) + 10;
@@ -121,6 +119,7 @@ function rightfn() {
 upbtn.addEventListener("click", upfn);
 
 function upfn() {
+  upbtn.classList.add("highlight");
   counter();
   // logger();
   let size = parseInt(divedit.style.marginTop) - 10;
@@ -134,6 +133,7 @@ function upfn() {
 leftbtn.addEventListener("click", leftfn);
 
 function leftfn() {
+  leftbtn.classList.add("highlight");
   counter();
   // logger();
   let size = parseInt(divedit.style.marginLeft) - 10;
