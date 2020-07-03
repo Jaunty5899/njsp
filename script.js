@@ -27,14 +27,30 @@ function increasefn() {
 }
 
 document.addEventListener("keydown", function (event) {
-  if (event.keyCode == 39) {
+  if (event.keyCode == 39 || event.keyCode == 68) {
     rightfn();
-  } else if (event.keyCode == 37) {
+    rightbtn.classList.add("highlight");
+  } else if (event.keyCode == 37 || event.keyCode == 65) {
     leftfn();
-  } else if (event.keyCode == 38) {
+    leftbtn.classList.add("highlight");
+  } else if (event.keyCode == 38 || event.keyCode == 87) {
     upfn();
-  } else if (event.keyCode == 40) {
+    upbtn.classList.add("highlight");
+  } else if (event.keyCode == 40 || event.keyCode == 83) {
     downfn();
+    downbtn.classList.add("highlight");
+  }
+});
+
+document.addEventListener("keyup", function (event) {
+  if (event.keyCode == 39 || event.keyCode == 68) {
+    rightbtn.classList.remove("highlight");
+  } else if (event.keyCode == 37 || event.keyCode == 65) {
+    leftbtn.classList.remove("highlight");
+  } else if (event.keyCode == 38 || event.keyCode == 87) {
+    upbtn.classList.remove("highlight");
+  } else if (event.keyCode == 40 || event.keyCode == 83) {
+    downbtn.classList.remove("highlight");
   }
 });
 

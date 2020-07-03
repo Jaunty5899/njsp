@@ -6,5 +6,10 @@
 
 #subject {
   border: 3px black solid;
-  transition: all ease-out 0.25s;
+  transition: all ease-out 0.05s;
+}
+
+.highlight {
+  background-color: crimson;
+  color: white;
 }
