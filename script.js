@@ -4,12 +4,12 @@ let leftbtn = document.querySelector("#left");
 let downbtn = document.querySelector("#down");
 let rightbtn = document.querySelector("#right");
 let count = document.querySelector("span");
-let divedit = document.querySelector("div");
+let divedit = document.querySelector("#subject");
 
-function logger() {
-  console.log(divedit.style.marginLeft);
-  console.log(divedit.style.marginTop);
-}
+// function logger() {
+//   console.log(divedit.style.marginLeft);
+//   console.log(divedit.style.marginTop);
+// }
 
 function counter() {
   count.textContent = +count.textContent + 1;
@@ -51,7 +51,7 @@ function rightfn() {
   counter();
   // logger();
   let size = parseInt(divedit.style.marginLeft) + 10;
-  if (size > 1345) {
+  if (size < 1345) {
     divedit.style.marginLeft = 1340 + "px";
   } else {
     divedit.style.marginLeft = size + "px";
@@ -64,8 +64,8 @@ function upfn() {
   counter();
   // logger();
   let size = parseInt(divedit.style.marginTop) - 10;
-  if (size < 5) {
-    divedit.style.marginTop = 5 + "px";
+  if (size < 0) {
+    divedit.style.marginTop = 0 + "px";
   } else {
     divedit.style.marginTop = size + "px";
   }
