@@ -1,0 +1,38 @@
+body {
+  background-color: grey;
+}
+
+#container {
+  width: 600px;
+  height: 600px;
+  background-color: #b0ebbd;
+  position: relative;
+  color: #b0ebbd;
+  font-size: 90px;
+  font-family: Century Gothic;
+}
+
+#l-square {
+  width: 150px;
+  height: 150px;
+  background-color: whitesmoke;
+}
+
+#r-rect {
+  width: 400px;
+  height: 150px;
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  background-color: whitesmoke;
+}
+
+span {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+@font-face {
+  font-family: myfont;
+  src: url(AlegreyaSansSC-Thin.ttf);
+}
