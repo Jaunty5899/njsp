@@ -9,7 +9,7 @@ body {
   position: relative;
   color: #b0ebbd;
   font-size: 90px;
-  font-family: Century Gothic;
+  font-family: myfont;
 }
 
 #l-square {
@@ -27,10 +27,11 @@ body {
   background-color: whitesmoke;
 }
 
-span {
+#l-tex {
+  color: black;
   position: absolute;
-  margin-top: 0px;
-  margin-left: 20px;
+  top: 0px;
+  border: 1px black solid;
 }
 @font-face {
   font-family: myfont;
