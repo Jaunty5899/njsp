@@ -1,15 +1,18 @@
-body {
-  background-color: grey;
-}
-
 #container {
   width: 600px;
   height: 600px;
-  background-color: #b0ebbd;
+  background-color: red;
   position: relative;
-  color: #b0ebbd;
+  color: red;
   font-size: 90px;
   font-family: myfont;
+  line-height: 150px;
+}
+
+#logo {
+  position: relative;
+  top: 200px;
+  left: 15px;
 }
 
 #l-square {
@@ -27,12 +30,23 @@ body {
   background-color: whitesmoke;
 }
 
-#l-tex {
-  color: black;
+#r-tex {
+  /* color: black; */
   position: absolute;
-  top: 0px;
-  border: 1px black solid;
+  width: 400px;
+  text-align: center;
+  /* border: 1px black solid; */
 }
+
+#l-tex {
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  font-family: bella fashion personal use;
+  overflow: hidden;
+  /* border: 1px black solid; */
+}
+
 @font-face {
   font-family: myfont;
   src: url(AlegreyaSansSC-Thin.ttf);
