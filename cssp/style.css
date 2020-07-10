@@ -1,50 +1,28 @@
-#container {
-  width: 600px;
-  height: 600px;
-  background-color: red;
+body {
   position: relative;
-  color: red;
-  font-size: 90px;
-  font-family: myfont;
+  background-color: red;
   line-height: 150px;
 }
-
 #logo {
-  position: relative;
-  top: 200px;
-  left: 15px;
-}
-
-#l-square {
-  width: 150px;
-  height: 150px;
   background-color: whitesmoke;
-}
-
-#r-rect {
-  width: 400px;
-  height: 150px;
   position: absolute;
-  right: 30px;
-  top: 0px;
-  background-color: whitesmoke;
-}
-
-#r-tex {
-  /* color: black; */
-  position: absolute;
-  width: 400px;
-  text-align: center;
-  /* border: 1px black solid; */
-}
-
-#l-tex {
-  position: absolute;
-  width: 150px;
-  text-align: center;
+  color: red;
+  font-size: 90px;
   font-family: bella fashion personal use;
-  overflow: hidden;
-  /* border: 1px black solid; */
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+#logo::before {
+  content: "ADDA";
+  position: absolute;
+  height: inherit;
+  width: 400px;
+  left: 160px;
+  background-color: whitesmoke;
+  font-family: myfont;
 }
 
 @font-face {
