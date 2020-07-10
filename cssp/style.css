@@ -17,11 +17,11 @@ body {
 
 #logo::before {
   content: "ADDA";
-  position: absolute;
+  position: inherit;
   height: inherit;
   width: 400px;
   left: 160px;
-  background-color: whitesmoke;
+  background-color: inherit;
   font-family: myfont;
 }
 
