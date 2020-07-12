@@ -1,18 +1,17 @@
 body {
   position: relative;
-  background-color: red;
+  background-color: hotpink;
   line-height: 150px;
+  color: hotpink;
+  text-align: center;
 }
 #logo {
   background-color: whitesmoke;
   position: absolute;
-  color: red;
   font-size: 90px;
   font-family: bella fashion personal use;
   width: 150px;
   height: 150px;
-  text-align: center;
-  /* overflow: hidden; */
 }
 
 #logo::before {

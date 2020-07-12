@@ -1,0 +1,19 @@
+div::before {
+  content: "anything ";
+  width: 70px;
+  height: 50px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-right: 10px;
+}
+div {
+  margin-top: 30px;
+}
+div::after {
+  content: " if you try";
+  width: 70px;
+  height: 50px;
+  border: 1px solid black;
+  padding: 20px;
+  margin-left: 10px;
+}
